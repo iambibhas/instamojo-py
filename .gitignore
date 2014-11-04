@@ -1,3 +1,7 @@
 *.pyc
 *.swp
 .idea
+
+build
+dist
+instamojo.egg-info

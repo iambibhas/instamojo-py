@@ -142,6 +142,7 @@ class Instamojo:
         # Picks up the right function to call (such as requests.get() for 'get')
         api_call = getattr(requests, method)
         req = api_call(api_path, data=kwargs, headers=headers)
+        req.connection.close()
 
         try:
             return req.json()

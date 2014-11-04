@@ -35,7 +35,7 @@ setup(
     install_requires=requires,
     license=open('LICENSE').read(),
     zip_safe=False,
-    test_suite = "instamojo.tests.TestApi",
+    test_suite="instamojo.tests.TestApi",
     classifiers=(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

@@ -3,12 +3,12 @@
 import os
 import sys
 
-import instamojo
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
+
+__version__ = '1.1'
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
@@ -22,7 +22,7 @@ requires = ['requests']
 
 setup(
     name='instamojo',
-    version=instamojo.__version__,
+    version=__version__,
     description='Instamojo API Wrapper.',
     long_description=open('README.md').read(),
     author='Instamojo Developers',
